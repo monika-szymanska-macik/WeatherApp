@@ -1,0 +1,47 @@
+<section class="today-forecast">
+    <section class="main">
+        <div class="primary">
+         {{location.city}} <span class="country">({{location.country }})</span>
+        </div>
+        <div class="secondary">
+            <span>
+                {{todayForecastData[0].day}}
+            </span>
+            <span>
+                {{todayForecastData[0].date}}
+            </span>
+            <span>
+                {{todayForecastData[0].hour}}
+            </span>
+        </div>
+    </section>
+    <section class="forecast-info">
+        <div class="icon">
+            <img src="http://openweathermap.org/img/wn/{{todayForecastData[0].value.weather_icon}}@4x.png"/>
+        </div>
+        <div class="temperature">
+            <span>{{todayForecastData[0].value.temp | kelvinToCelsius}}</span>
+        </div>
+        <div class="forecast">
+            <div class="description">
+                <span>
+                     {{todayForecastData[0].value.description | firstLetterUppercase }}
+                </span>
+            </div>
+            <div class="all">
+                <div class="basic-info">
+                    <span>Temp. max: {{todayForecastData[0].value.temp_max | kelvinToCelsius }}</span>
+                    <span>Temp. min.: {{todayForecastData[0].value.temp_min | kelvinToCelsius }}</span>
+                    <span>Odczuwalna: {{todayForecastData[0].value.feels_like | kelvinToCelsius}}</span>
+                </div>
+                <div class="additional-info">
+                    <span>Ciśnienie: {{todayForecastData[0].value.pressure}} hPa</span>
+                    <span>Prędkość wiatru: {{metersPerSecondsToKilometersPerHour(todayForecastData[0].value.wind_speed)}} km/h </span>
+                    <span>Zachmurzenie: {{todayForecastData[0].value.clouds_all}} %</span>
+                    <span>Wilgotność: {{todayForecastData[0].value.humidity}} %</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+

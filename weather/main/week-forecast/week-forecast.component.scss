@@ -1,0 +1,37 @@
+.weekly-forecast{
+    display: flex;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.week-day{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+}
+
+.week-forecast{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px;
+}
+
+.forecast-list{
+    border: solid black 2px;
+    margin: 5px;
+    padding: 5px;
+    width: 120px;
+    box-shadow: 5px 10px black;
+    border-radius: 15px;
+}
+
+.img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

@@ -1,0 +1,3 @@
+<app-header (myCity)="getCityFromUser($event)"></app-header>
+<hr/>
+<app-main *ngIf="weatherApiData !== undefined" [weatherApiData]="weatherApiData"></app-main>

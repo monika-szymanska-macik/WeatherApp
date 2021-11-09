@@ -1,0 +1,86 @@
+.today-forecast{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    box-shadow: 5px 10px black;
+    border-radius: 15px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+
+.primary{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    color:black;
+    
+    .country{
+        font-size: 2rem;
+    }
+}
+
+.secondary {
+    font-size: 1.75rem;
+    margin: 5px;
+    pad: 5px;
+}
+
+.forecast-info{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+.icon{
+    margin: 5px;
+    padding: 5px;
+}
+
+.temperature{
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.forecast{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+}
+
+.description{
+    padding: 5px;
+    margin: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.all{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    line-height: 20px;
+}
+
+.basic-info, .additional-info{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,13 @@
+<section class="weekly-forecast" *ngFor="let item of weeklyForecastMap | keyvalue: asIsOrder">
+    <div class="week-day">{{item.key}}</div>
+   <div class="week-forecast">
+        <div class="forecast-list" *ngFor="let val of item.value">
+         <div>{{val?.hour}}</div>
+        <span>
+            <img class="img" src="http://openweathermap.org/img/wn/{{val?.value.weather_icon}}@2x.png"/>
+        </span>
+        <div class="weekly-temp">{{val.value.temp | kelvinToCelsius}}</div>
+        <div class="weekly-desc">{{val.value.description | firstLetterUppercase}}</div>
+    </div>
+    </div>
+</section>
